@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+</head>
+<body>
+    <h1>De qual Pais voce se encontra?</h1>
+    <label for="txt1">Digite seu Pais</label>
+    <input type="text" name="txt1" id="txt1">
+    <input type="submit" value="Enviar" onclick="clicar()">
+    <div id="resl">
+
+    </div>
+
+    <script>
+        function clicar() {
+            var lc = window.document.getElementById('txt1')
+            var res = window.document.getElementById('resl')
+            var Pais = String(lc.value) 
+            if (Pais == "Brasil") {
+                res.innerHTML = `<P>voce e <strong>Brasileiro</strong></p>`
+
+            } else {
+                res.innerHTML = `<P>voce e <strong>Estrangeiro</strong></p>`
+            }          
+
+        }
+
+    </script>
+    
+</body>
+</html>
