@@ -9,14 +9,34 @@
 </head>
 <body>
     <header>
-        <h1>Hora do dia</h1>
+        <h1>Verificador de idade</h1>
 
     </header>
     <section>
-        <h2>Agora sao 21 horas.</h2>
-        <div id="imagem">
+        <form action="cadastro.php" method="get">
+            <div id="forma">
+                <label for="iano">Ano de nascimento:</label>
+                <input type="number" name="ano" id="iano" min="1900" max="2023" value="2000">
+            </div>
+
+            <div id="forms">
+                <label>Sexo:</label>
+                <input type="radio" name="mf" id="im">
+                <label for="im">Masculino</label>
+                <input type="radio" name="mf" id="if">
+                <label for="if">Feminino</label>
+            </div> 
+
+            <div>
+                <input type="submit" value="Verificar">
+            </div>
+        </form>
+
+        <div id="res">
+            Preencha os dados acima para ver o resultado!
 
         </div>
+
 
     </section>
 

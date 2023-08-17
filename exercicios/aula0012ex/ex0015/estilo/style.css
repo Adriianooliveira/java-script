@@ -5,48 +5,36 @@
     margin: 0px;
 }
 
-body, html {
+body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(2, 2, 88);
+    background-color: rgb(19, 19, 163);
 }
 
 header h1 {
     color: white;
+    padding-top: 20px;
     text-align: center;
-    padding: 20px 0px;
 }
 
 section {
     display: block;
     margin: auto;
-    text-align: center;
-    border-radius: 10px;
+    padding: 25px 0px 0px 0px;
+    text-indent: 15px;
+    line-height: 37px;
+    margin-top: 20px;
     background-color: white;
-    width: 600px;
-    height: 400px;
-
-
-    
+    width: 500px;
+    height: 160px;
+    border-radius: 10px;
 }
 
-section h2{
-    padding-top: 20px;
-    color: rgb(68, 68, 68);
+section div {
 
 }
 
-section div#imagem {
-    display: block;
-    margin: auto;
-    background: url(../imagens/pexels-produtora-midtrack-2764182.jpg);
-    margin-top: 10px;
-    border-radius: 50%;
-    background-size: cover;
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-color: green;
-    width: 300px;
-    height: 310px;
+section div#ano input[type = number] {
+    width: 120px;
 }
 
 footer {
