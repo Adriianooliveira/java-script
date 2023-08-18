@@ -33,7 +33,7 @@ section div {
 
 }
 
-section div#ano input[type = number] {
+section div#form input[type = number] {
     width: 120px;
 }
 

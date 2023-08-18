@@ -13,14 +13,13 @@
 
     </header>
     <section>
-        <form action="cadastro.php" method="get">
-            <div id="forma">
-                <label for="iano">Ano de nascimento:</label>
-                <input type="number" name="ano" id="iano" min="1900" max="2023" value="2000">
+            <div id="form">
+                <label>Ano de nascimento:</label>
+                <input type="number" name="ano" id="iano">
             </div>
 
-            <div id="forms">
-                <label>Sexo:</label>
+            <div id="form2">
+                <label>sexo:</label>
                 <input type="radio" name="mf" id="im">
                 <label for="im">Masculino</label>
                 <input type="radio" name="mf" id="if">
@@ -28,9 +27,8 @@
             </div> 
 
             <div>
-                <input type="submit" value="Verificar">
+                <input type="submit" value="Verificar" onclick="verificar()">
             </div>
-        </form>
 
         <div id="res">
             Preencha os dados acima para ver o resultado!
@@ -44,6 +42,7 @@
         <p><a href="#" target="_blank"><span class="material-symbols-outlined">star</span>CursoemVideo</a></p>
 
     </footer>
+    <script src="script.js"></script>
     
 </body>
 </html>
