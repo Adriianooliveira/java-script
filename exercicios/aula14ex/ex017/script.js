@@ -12,7 +12,7 @@ function tabuada() {
         while (n <= 10) {
             var item = window.document.createElement('option')
             item.innerHTML += `${nm} x ${n} = ${nm*n}`
-            item.value = `tab${cm}`   
+            item.value = `tab${nm}`   
             tabuada.appendChild(item)
             n++
         }
