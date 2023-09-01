@@ -2,7 +2,7 @@ let num = [4 , 6, 3, 9, 5 ]
 num.sort()
 num.push(1)
 console.log(num)
-console.log(`o valor tem ${num.lengthk} posiçoes`)
+console.log(`o valor tem ${num.length} posiçoes`)
 console.log(`o primeiro valor do vetor e ${num[0]}`)
 let pos = num.indexOf(10)
 if (pos === -1) {
