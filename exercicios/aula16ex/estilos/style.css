@@ -35,3 +35,7 @@ div#form {
 select {
     width: 150px;
 }
+
+p {
+    line-height: 2.2em;
+}

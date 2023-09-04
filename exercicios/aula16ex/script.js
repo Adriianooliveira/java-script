@@ -42,7 +42,12 @@ function finalizar() {
     } else {
         var maior = valores[0] 
         var menor = valores[0]
-        for( var pos = 0 ; pos <= valores.length; pos++) {
+        var soma = 0
+        let media = 0
+
+        for( var pos = 0 ; pos < valores.length; pos++) {
+            soma += valores[pos]
+
             if(valores[pos] > maior ) {
                 maior = valores[pos]
             }
@@ -50,11 +55,14 @@ function finalizar() {
             if(valores[pos] < menor){
                 menor = valores[pos]
             }
-        }     
-        res.innerHTML += `Ao todo, temos ${valores.length} numeros cadastrados </br>`
-        var prime = valores[0]
-        res.innerHTML += `O primeiro valor informado foi ${prime}</br>`
-        res.innerHTML += `O maior valor informado foi ${maior}</br>`
-        res.innerHTML += `O menor valor informado foi ${menor}</br>`
+        }
+        media = soma / valores.length
+        var prime = valores[0]    
+        res.innerHTML += `<p>Ao todo, temos ${valores.length} numeros cadastrados</p>`
+        res.innerHTML += `<p>O primeiro valor informado foi ${prime}</p>`
+        res.innerHTML += `<p>O maior valor informado foi ${maior}</p>`
+        res.innerHTML += `<p>O menor valor informado foi ${menor}</p>`
+        res.innerHTML += `<p>A soma de todos valores é ${soma}</p>`
+        res.innerHTML += `<p>A media dos valores digitados é ${media}</p>`
     }
 }
